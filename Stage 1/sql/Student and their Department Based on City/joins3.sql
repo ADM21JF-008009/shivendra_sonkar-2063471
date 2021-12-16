@@ -1,0 +1,1 @@
+select Student.student_name,department.department_name from Student inner join department on department.department_id=Student.department_id where Student.city='Coimbatore' order by Student.student_name asc;
