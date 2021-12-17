@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:util="http://www.springframework.org/schema/util" 
+ xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+<bean name="currencyconverter" class="com.spring.app.CurrencyConverter">
+<property name="mObj">
+<map>
+  <entry key="DOLLAR" value="65"/>
+  <entry key="EURO" value="80"/>
+  <entry key="DINAR" value="218"/>
+</map>
+</property>
+</bean>
+</beans>
